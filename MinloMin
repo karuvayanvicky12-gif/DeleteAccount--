@@ -1,0 +1,17 @@
+<?php
+if(isset($_POST["contact"]))
+{
+    echo "<script>alert('We are sorry to see to know that you wanted to deleted the store details, Your Registration will be marked for deletion and one of our executive will be in touch with you shortly to resolve your queries. Thanks for reaching our to minlomin.com.')</script>";
+	echo "<script>setTimeout(\"location.href = 'index.php';\",1500);</script>";
+}
+?>
+<html>
+    <head><title>minlomin.com</title></head>
+    <body>
+        I want to delete my user registration details from the app
+        <form action="deletionrequest.php" method="post">
+            <input type="text" name="contact" placeholder="Enter your Phone Number" required>
+            <input type="submit">
+        </form>
+    </body>
+</html>
